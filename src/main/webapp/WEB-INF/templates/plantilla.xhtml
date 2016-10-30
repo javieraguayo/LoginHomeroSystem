@@ -18,11 +18,9 @@
         <div id="top">
             <ui:insert name="top">Top</ui:insert>
             <h:form>
-                <p:menubar>
-                    <p:menuitem value="Opcion1" />
-                    <p:menuitem value="Opcion2" />
-                    <p:menuitem value="Opcion3" />
-                </p:menubar>
+                <p:menubar model="#{menuController.model}"/>
+                    
+               
             </h:form>
         </div>
 
